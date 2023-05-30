@@ -1,7 +1,7 @@
 body{
-    margin-top: 0 auto;
+    padding: 63px 25px;
+    background: linear-gradient(#FEFEFE, #888888);
 }
-
 .imagen{
     transition: 1s;
 }
@@ -10,22 +10,22 @@ body{
     transform: scale(1.2);
 }
 
-button{
+.enviar{
     width: 10%;
     padding: 15px 0;
-    margin: 10px;
+    margin: auto 10px;
     font-size: 18px;
     font-weight: bold;
     color: white;
     background: rgb(71, 107, 173);
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: 1s;
     cursor: pointer;
 
 }
 
-button:hover{
+.enviar:hover{
     background: rgb(10, 28, 44);
     transform: scale(1.2);
 }
