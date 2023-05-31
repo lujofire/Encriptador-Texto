@@ -2,12 +2,26 @@ body{
     padding: 63px 25px;
     background: linear-gradient(#FEFEFE, #888888);
 }
+
+.caja{
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
 .imagen{
     transition: 1s;
 }
 
 .imagen:hover{
     transform: scale(1.2);
+}
+
+.input-padron{
+    border: #FEFEFE;
+    width: 300px;
+    position: relative;
+    margin: 10px 40px;
 }
 
 .enviar{
@@ -28,4 +42,11 @@ body{
 .enviar:hover{
     background: rgb(10, 28, 44);
     transform: scale(1.2);
+}
+
+.textarea{
+    margin: 50px 10px;
+    border-radius: 20px;
+    border: #FEFEFE;
+
 }
