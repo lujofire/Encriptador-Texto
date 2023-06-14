@@ -3,31 +3,9 @@ body{
     background: linear-gradient(#FEFEFE, #888888);
 }
 
-.caja{
-    width: 1200px;
-    position: relative;
-    margin: 0 auto;
-}
-
-.imagen{
-    transition: 1s;
-}
-
-.imagen:hover{
-    transform: scale(1.2);
-}
-
-.input-padron{
-    border: #FEFEFE;
-    width: 300px;
-    position: relative;
-    margin: 10px 40px;
-}
-
 .enviar{
-    width: 10%;
-    padding: 15px 0;
-    margin: auto 10px;
+    padding: 15px;
+    margin: auto 70px;
     font-size: 18px;
     font-weight: bold;
     color: white;
@@ -47,7 +25,29 @@ body{
 
 .textarea{
     margin: 50px 10px;
-    border-radius: 20px;
+    border-radius: 50px;
     border: #FEFEFE;
 
+}
+
+.headerPrincipal-titulo{
+    font-weight: bold;
+    font-size: 40px;
+    align-items: center;
+}
+
+.contenidoPrincipal-texto{
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.criterio{
+    margin-top: 15px;
+}
+
+.footerPrincipal-patrocinadores-list{
+    font-weight: bold;
+    font-size: 25px;
+    align-items: center;
+    
 }

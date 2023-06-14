@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-    
-    <head>
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width">
-        <title>Encriptador de Texto</title>
-        <link rel="icon" type="image/png" href="imagenes/diamod.png">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <div class="caja">
-                <h1><img src="imagenes/Frame 6.png" class="imagen"></h1>
-            </div>      
-        </header>
-        <main> 
-            <section>
-                <div>
-                    <textarea id="mensaje" cols="70" rows="1" class="input-padron" required placeholder="Ingrese el texto aqui"></textarea>
-                    <p class="criterio">Solo letras minúsculas y sin acentos</p>
-                </div>
-    
-                <div class="botones">
-                    <input type="submit" value="Encriptar" class="enviar">
-                    <input type="submit" value="Desencriptar" class="enviar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de Texto</title>
+    <link rel="icon" type="image/png" href="imagenes/diamod.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+
+<body>
+    <header class="headerPrincipal">
+        <div class="container">
+            
+            <h1><img src="imagenes/diamod.png" class="headerPrincipal-imagen-diamante"></h1>
+            <h1 class="headerPrincipal-titulo">MI PRIMER CHALLENGE</h1>
+            <h1><img src="imagenes/diamod.png" class="headerPrincipal-imagen-diamante"></h1>
+        </div>
+    </header>
+
+    <main class="contenidoPrincipal">
+        <section>
+            <div class="container">
+                <textarea id="mensaje" cols="70" rows="2" class="contenidoPrincipal-texto" required placeholder="Ingrese el texto aqui"></textarea>
+                <p class="criterio">Ingrese el texto que desees Encriptar o Desencriptar</p>
+                <p class="criterio">Solo letras minúsculas y sin acentos</p>
+            </div>
+        </section>
+
+            <div>
+                <ul>
+                    <li class="contenidoPrincipal-list">
+                        <textarea cols="70" rows="10" class="textarea" required placeholder="Ningún mensaje fue encontrado"></textarea>
+                    </li>
+                </ul>
+            </div>
+        <div class="container-boton">
+            <ul class="boton">
+                <li><input type="submit" value="Encriptar" class="enviar"></li>
+                <li><input type="submit" value="Desencriptar" class="enviar"></li>
+                <li><input type="submit" value="Copiar" class="enviar"></li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footerPrincipal">
+        <div class="container">
+            <section class="footerPrincipal-section">
+                <ul class="footerPrincipal-patrocinadores">
+                    <li>
+                        <img src="imagenes/alura.svg" alt="Logo da Alura">
+                    </li>
+                    <li class="footerPrincipal-patrocinadores-list">FIGUEROA JOSUE</li>
+                    <li><img src="imagenes/Frame 6.png" alt="Letra Alura"></li>
                     
-                </div>
-            </section> 
-            <section>
-                    <ul>
-                        <li>
-                            
-                            <textarea cols="70" rows="20" class="textarea"></textarea>
-                            <h2>Ningún mensaje fue Enconotrado</h2>
-                            <p>Ingrese el texto que desees Encriptar o Desencriptar</p>
-                            <input type="submit" value="Copiar" class="enviar">
-                        </li>
-                    </ul>      
+                </ul>
+
             </section>
-            <section>
-                <img src="imagenes/Muñeco.png" class="imagen-principal">
-            </section>
-        </main>
-    </body>
+        </div>
+    </footer>
+</body>
+
 </html>

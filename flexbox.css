@@ -1,0 +1,33 @@
+.headerPrincipal .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerPrincipal-imagen-diamante{
+    margin-right: 15px;
+}
+
+.contenidoPrincipal .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidoPrincipal-list{
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.footerPrincipal-patrocinadores{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
