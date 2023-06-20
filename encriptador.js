@@ -1,7 +1,10 @@
+let a = "ai";
 let texto = "";// contiene el texto en minusculas
 var tamanoString;// contien el tamaño de mi mensaje
-let arrayTexto = [];// contiene cada letra de mi mensaje 
-let textoEncriptado;// contiene mi texto encriptado
+let arrayTexto = [];// contiene cada letra de mi mensaje
+let arrayEncriptado = [];// contiene cada letra de mi mensaja desencriptado 
+let textoEncriptado;// contiene el texto encriptado
+let outPutValue;// contiene un mensaje encriptado escrito desde el input
 
 
 const getValueInput = () => {
@@ -27,15 +30,55 @@ function recorrerString(inputValue) {
 /* esta funcion Encripta mi mensaje */
 function reemplazarTexto(tamanoString, texto) {
    for (var x = 0; x < tamanoString; x++) {
-      var caracter = texto.charAt(x);
-      //console.log(caracter+", posicion:"+x.toString());
+         var caracter = texto.charAt(x);
+         //console.log(caracter+", posicion:"+ x.toString());
+         //arrayTexto.push(caracter);
+         //arrayTexto = [texto.charAt(x)];
+         if (caracter != 'a' && caracter != 'e' && caracter != 'i' && caracter != 'o' && caracter != 'u') {
+            arrayTexto.push(caracter);
+         }
+         if (caracter == 'a') {
+            arrayTexto.push("ai");
+         }
+         if (caracter == 'e') {
+            arrayTexto.push("enter");
+         }
+         if (caracter == 'i') {
+            arrayTexto.push("imes");
+         }
+         if (caracter == 'o') {
+            arrayTexto.push("ober");
+         }
+         if (caracter == 'u') {
+            arrayTexto.push("ufat");
+         }
+   }// fin for
+   console.log(arrayTexto);
+   //console.log(arrayTexto);
+}
+
+const getCopyOutput = () => {
+   outPutValue = document.getElementById("valueInput").value;
+   console.log(outPutValue);
+}
+
+
+const desencriptarMensaje = () => {
+   outPutValue = document.getElementById("valueInput").value;
+    let mensaje = outPutValue.toLowerCase();// me convierte mayusculas a minusculas
+   let tamTexto = mensaje.length;// me da el tamaño de mi texto en numero
+   for (var x = 0; x < tamTexto; x ++) {
+      let mensajeEncrip = mensaje.charAt(x);
+      console.log(mensajeEncrip +", posicion:"+ x.toString());
       //arrayTexto.push(caracter);
       //arrayTexto = [texto.charAt(x)];
-      if (caracter != 'a' && caracter != 'e' && caracter != 'i' && caracter != 'o' && caracter != 'u') {
-         arrayTexto.push(caracter);
+      if (mensajeEncrip != 'a' && mensajeEncrip != 'e' && mensajeEncrip != 'i' && mensajeEncrip != 'o' && mensajeEncrip != 'u') {
+         arrayEncriptado.push(mensajeEncrip);
+         console.log(arrayEncriptado);
       }
-      if (caracter == 'a') {
-         arrayTexto.push("ai");
+      /*
+      if (mensajeEncrip == 'ai') {
+         arrayEncriptado.push("a");
       }
       if (caracter == 'e') {
          arrayTexto.push("enter");
@@ -48,34 +91,9 @@ function reemplazarTexto(tamanoString, texto) {
       }
       if (caracter == 'u') {
          arrayTexto.push("ufat");
-      }
-      /*if(arrayTexto == 'e'){
-         indice_array = arrayTexto.indexOf('e');
-         arrayTexto[indice_array] = e;
-            
-      }
-      if(arrayTexto == 'i'){
-         indice_array = arrayTexto.indexOf('i');
-         arrayTexto[indice_array] = i;
-            
       }*/
-
-      /*
-      if(arrayTexto == 'u'){
-         indice_array = arrayTexto.indexOf('u');
-         arrayTexto[indice_array] = u;
-            
-      }*/
-   }// fin for
-
-   console.log(arrayTexto);
-   //console.log(arrayTexto);
-}
-
-
-const getCopyOutput = () => {
-   let outPutValue = document.getElementById("valueInput").value;
-   console.log(outPutValue);
+}// fin for
+   console.log(arrayEncriptado);
 }
 
 
