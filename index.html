@@ -22,7 +22,7 @@
     </header>
 
     <main class="contenidoPrincipal">
-        <section>
+        <section id="texto-encrip">
             <div class="container">
                 <textarea id="mensaje" cols="70" rows="2" class="contenidoPrincipal-texto" required placeholder="Ingrese el texto aqui"></textarea>
                 <p class="criterio">Ingrese el texto que desees Encriptar o Desencriptar</p>
@@ -33,15 +33,15 @@
             <div>
                 <ul>
                     <li class="contenidoPrincipal-list">
-                        <textarea cols="70" rows="10" class="textarea" required placeholder="Ningún mensaje fue encontrado"></textarea>
+                        <textarea cols="70" rows="10" class="textarea" id="valueInput" required placeholder="Ningún mensaje fue encontrado"></textarea>
                     </li>
                 </ul>
             </div>
         <div class="container-boton">
             <ul class="boton">
-                <li><input type="submit" value="Encriptar" class="enviar"></li>
+                <li><input type="submit" onclick="getValueInput()" value="Encriptar" class="enviar"></li>
                 <li><input type="submit" value="Desencriptar" class="enviar"></li>
-                <li><input type="submit" value="Copiar" class="enviar"></li>
+                <li><input type="submit" onclick="getCopyOutput()" value="Copiar" class="enviar"></li>
             </ul>
         </div>
     </main>
@@ -50,16 +50,19 @@
             <section class="footerPrincipal-section">
                 <ul class="footerPrincipal-patrocinadores">
                     <li>
-                        <img src="imagenes/alura.svg" alt="Logo da Alura">
+                        <img src="imagenes/alura.svg" alt="Logo de Alura">
                     </li>
                     <li class="footerPrincipal-patrocinadores-list">FIGUEROA JOSUE</li>
-                    <li><img src="imagenes/Frame 6.png" alt="Letra Alura"></li>
+                    <li><img src="imagenes/alura.svg" alt="Logo de Alura"></li>
                     
                 </ul>
 
             </section>
         </div>
     </footer>
+
+    <script src="encriptador.js"></script>
+
 </body>
 
 </html>
